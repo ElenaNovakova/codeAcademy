@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.grid div {
+    background-color: rgb(28, 65, 65);
+    border-radius: 5px;
+    text-align: center;
+    order: 5;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid div:nth-child(1){
+    order: 2;
+}
+
+.grid div:nth-child(6){
+    order: 3;
+}
+
+.grid div:nth-child(4){
+    order: 1;
+}
+
+.grid div:nth-child(5){
+    order: 4;
+}

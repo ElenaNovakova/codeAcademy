@@ -1,0 +1,14 @@
+nav {
+    margin: 0 auto;
+    width: 60%;
+    background: red;
+    display: inline;
+}
+
+ul {
+   float: left;
+}
+
+select, label {
+    float: right;
+}

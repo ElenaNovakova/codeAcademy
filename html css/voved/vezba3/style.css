@@ -1,0 +1,75 @@
+body {
+    background: #fffcfc;
+    margin: 0;
+    color: #1b1d21;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.container {
+    height: 100vh;
+}
+
+
+.main {
+    display: flex;
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    margin: 10px 20px 0 10px;
+}
+
+.licni-podatoci{
+    font-size: 20px;
+}
+
+
+.licni-podatoci a {
+    text-decoration: none;
+}
+
+.licni-podatoci a:hover {
+    font-size: 22px;
+    color: #7294d8;
+}
+
+.text {
+   display: flex;
+   width: 80%;
+   text-align: center;
+   margin: 10px auto;
+}
+.text div {
+    background: #c9d5f2;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+.contact>h2 {
+    color: #7294d8;
+    display: flex;
+    width: 80%;
+    margin: 5px auto; 
+}
+
+.contact p {
+    color: #8e939e;
+}
+
+#form>p {
+    font-size: 25px;
+    color: #1b1d21;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background: #7294d8;
+    color: #1b1d21;
+    padding: 5px 20px;
+}

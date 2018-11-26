@@ -1,0 +1,76 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ul li a {
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dove::before {
+    content: url(paw.svg);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.fish::after {
+    content: url(fish.svg);
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+
+.paw::before {
+    content: url(paw.svg);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.sun::after{
+    content: url(sun.svg);
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+
+.dog::before {
+    content: url(dog.svg);
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.vaucer {
+    width: 300px;
+    height: 80px;
+    border: 1px solid #d4d4d4;
+    margin-left: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.vaucer::after {
+    content: ">";
+    position: absolute;
+    right: 10px;
+    margin: 0;
+}

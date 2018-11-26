@@ -1,0 +1,277 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    width: 1100px;
+    top: 0;
+}
+
+header .logo {
+    width: auto;
+    height: 40px;
+}
+
+header .menu {
+    width: auto;
+    max-width: calc(100%-300px);
+    height: 100%;
+}
+
+header .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header .menu ul li {
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #2d2d2d;
+}
+
+header .menu ul li:nth-child(n+2):nth-child(n-4)::before {
+    content: "•";
+    padding: 0 10px;
+}
+
+
+
+header .menu-wrap {
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+/* header .menu ul li img {
+    width: 25px;
+    height: 25px;
+} */
+
+header .search-img {
+    width: 25px;
+    height: 25px;
+}
+
+header .menu ul li.active a {
+    color: #1087cc;
+}
+
+header .menu ul .dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 120px;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+}
+
+header .menu .has-dropdown:hover .dropdown {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider img {
+   width: 100%;
+   height: 350px;
+   object-fit: cover;
+   object-position: bottom;
+}
+
+.slider {
+    margin: 55px 0 20px;
+}
+
+.slider a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slider-text{
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    font-weight: 700;
+}
+
+.widget {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.widget .part {
+    width: calc(100%/2 - 10px);
+    overflow: hidden;
+    position: relative;
+}
+
+.widget .part a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 140px;
+}
+
+.logo-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+}
+
+.logo-wrap img {
+    width: 90%;
+    height: auto;
+}
+
+.text {
+    width: calc(100%/2 - 10px);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.title {
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #2d2d2d;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/*addidas*/
+
+.adidas ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.adidas ul li {
+    background-color: #f6f6f6;
+    height: 80px;
+    width: calc(100% / 4 - 10px);
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    color: #4b4b4b;
+    border: 1px solid rgba(75, 75, 75, 0.15);
+}
+
+.adidas ul li .adidas-image {
+    min-width: 100px;
+}
+
+.adidas ul li .adidas-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 50px;
+}
+
+
+.adidas ul li .adidas-box {
+    width: calc (100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    border-left: 1px solid #e8e9e9;
+}
+
+.adidas ul li .adidas-box .adidas-header {
+    color: #1097cc;
+    font-weight: bold;
+}
+
+/*search*/
+
+.menu-wrap {
+    position: relative;
+}
+
+.search-wrap {
+    position: absolute;
+    right: 30px;
+}
+
+.search-hover {
+    display: flex;
+}
+
+.search-wrap .search {
+    width: 200px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    border: 1px solid #eaeef1;
+    padding: 5px;
+    display: none;
+}
+
+.search-hover:hover .search {
+    display: flex;
+}
+
+
+/*Media*/
+
+
+@media only screen and (max-width: 1100px) {
+
+}

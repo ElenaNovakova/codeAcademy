@@ -1,0 +1,99 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list div {
+    display: flex;
+    width: calc(25% - 10px);
+    height: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+    border: 1px dashed rgb(226, 226, 226);
+}
+/* 
+.list div:first-of-type{
+    background-color: rgb(139, 50, 117);
+}
+
+.list div:last-of-type{
+    background-color: rgb(39, 3, 30);
+}
+
+.list div:nth-of-type(odd){
+    background-color: rgb(131, 78, 117);
+}
+/*go selektira i 6tiot
+.list div:nth-of-type(-n+6){
+    background-color: rgb(190, 180, 188);
+} 
+
+*/
+
+.list div:nth-child(odd){
+    background-color: rgb(96, 96, 192);
+}
+.list div:nth-child(even){
+    background-color: rgb(96, 192, 176);
+}
+
+
+.list div:nth-child(n + 2):nth-child(-n + 4):nth-child(even){
+    background-color: rgb(153, 174, 192);
+}
+
+.list div:nth-child(n + 9):nth-child(-n + 11):nth-child(odd){
+    background-color: rgb(43, 63, 80);
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 1100px) {
+    .list div {
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    .list {
+        width: 80%;
+    }
+
+    .list div {
+        width: calc(45% - 10px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .list {
+        width: 85%;
+    }
+
+    .list div {
+        width: calc(40% - 10px);
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .list {
+        width: 90%;
+    }
+
+    .list div {
+        width: 100%;
+    }
+}

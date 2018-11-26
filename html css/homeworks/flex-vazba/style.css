@@ -1,0 +1,52 @@
+body {
+    background: #f4ffef;
+    font-family: 'Courgette', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    border-radius: 10px;
+}
+
+.haeder{
+    background: #379183;
+    padding: 10px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    background: #e8a833;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+}
+
+.content {
+    background: #ccbdca;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.aside {
+    background: #6d315a;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+}
+
+
+.footer {
+    background: #27ad47;
+    padding: 10px;
+    color: white;
+}

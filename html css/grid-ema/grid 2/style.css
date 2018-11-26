@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 250px) 1fr 1fr;
+    grid-auto-rows: minmax(80px, auto);
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.grid div {
+    background-color: rgb(28, 65, 65);
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+

@@ -1,0 +1,38 @@
+.rating {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.rating i {
+    font-size: 24px;
+    color: #ddd;
+    text-shadow: 0px 0px 10px #f1c40f;
+}
+
+.rating i:hover {
+    color: #f1c40f;
+}
+
+
+.star-1:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-2:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-3:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-4:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-5:hover ~ i {
+    color: #f1c40f;
+}

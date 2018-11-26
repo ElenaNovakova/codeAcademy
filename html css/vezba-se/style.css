@@ -1,0 +1,370 @@
+body{
+    background-color: #eee;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(68, 67, 67);
+}
+
+header {
+    background-color: #fff;
+}
+
+nav {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.cnn {
+    justify-self: flex-start;
+    width: 100px;
+    margin-left: -20px;
+}
+
+.search {
+    max-width: 100px;
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header ul li {
+   padding-right: 30px;
+}
+
+header ul li:last-child{
+    position: relative;
+}
+
+header ul li:last-child::after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgb(0, 0, 0);
+    right: 10px;
+    bottom: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(68, 67, 67);
+}
+
+.search-wrapp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-wrapp input {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid rgba(92, 92, 92, 0.8);
+    box-shadow: 0 0 1px rgba(92, 92, 92, 0.8);
+}
+
+
+/*WRAPPER*/
+
+.wrapper {
+    width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+} 
+
+/*BIG IMAGE*/
+
+.img-wrap {
+    position: relative;
+    display: flex;
+}
+
+.logo-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: -50px;
+    left: 30px;
+}
+
+.logo{
+    border-radius: 1px;
+    box-shadow: 0 1px 1px rgba(92, 92, 92, 0.8);
+    background-color: #fff;
+}
+
+.logo-wrap>span {
+    margin: 20px;
+}
+
+.img-wrap::before {
+    content: url(img/arrow-left.png);
+    position: absolute;
+    align-self: center;
+    left: -30px;
+}
+
+.img-wrap::after {
+    content: url(img/arrow-right.png);
+    position: absolute;
+    align-self: center;
+    right: -30px;
+}
+
+/*DOTES*/
+.dots{
+    align-self: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.dots span:nth-child(9){
+    background-color: rgb(61, 61, 61);
+}
+
+
+/*VAUCHERS*/
+
+.vaucers{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vaucers>h2{
+    align-self: center;
+}
+
+.vaucer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vaucer {
+    display: flex;
+    flex-direction: column;
+}
+
+.vaucer>span {
+    margin-top: 10px;
+    align-self: center;
+}
+
+/*PARAGRAH*/
+
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.paragraph {
+    display: flex;
+}
+
+.paragraph .p1 {
+    padding-right: 10px;
+    border-right: 3px solid rgba(92, 92, 92, 0.8);
+}
+
+.paragraph .p2 {
+    padding-left: 10px;
+}
+
+/*COUPONS*/
+
+.coupons-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.coupons {
+    width: 1100px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
+    justify-content: space-between;
+}
+
+.coupon {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(92, 92, 92, 0.8);
+    display: flex;
+}
+
+.coupon img{
+    justify-self: cener;
+    align-self: center;
+    padding: 10px;
+}
+
+.coupon .coupon-text {
+    padding: 20px;
+}
+
+.coupon .coupon-text a {
+    text-decoration: none;
+    color: rgb(46, 46, 194);
+}
+
+/*CATEGORIES*/
+
+.categories-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons>button {
+    padding: 7px 10px;
+    min-width: 200px;
+    box-shadow: 0 1px 1px rgba(92, 92, 92, 0.8);
+    border: 1px solid rgba(92, 92, 92, 0.8);
+    background-color: #fff;
+    color: rgb(68, 67, 67);
+    cursor: pointer;
+}
+
+.buttons .button-active {
+    background-color: rgb(46, 46, 194);
+    color: #fff;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.categories .categorie{
+    background-color: #fff;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories .categorie>img {
+    justify-self: center;
+    align-self: center;
+    margin:  0 20px;
+}
+
+.categories .categorie .categorie-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px;
+    flex: 1;
+}
+
+.categories .categorie button {
+    justify-self: flex-end;
+    align-self: center;
+    margin: 40px;
+    width: 250px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: rgb(68, 67, 67);
+    border: none;
+    box-shadow: 0 1px 1px rgba(92, 92, 92, 0.8);
+    cursor: pointer;
+}
+
+.categories .categorie:first-child button:first-of-type  {
+    background-color: rgb(68, 67, 67);
+    color: #fff;
+}
+
+.categories .categorie:first-child .categorie-text span:first-of-type {
+    color: rgb(4, 158, 4);   
+}
+
+
+
+.categorie-text span:last-of-type {
+    color: rgb(112, 106, 106);
+}
+
+.categorie-text .deal {
+    color: rgb(46, 46, 194);
+}
+
+/*FOOTER*/ 
+
+.footer-wrap {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+footer {
+    width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: rgb(24, 17, 17);
+    padding-right: 30px;
+    font-weight: 450;
+}
+
+.footer-wrap::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f077";
+    position: absolute;
+    right: 20px;
+    box-shadow: 0px 1px 5px 2px rgba(49, 49, 49, 0.75);
+    padding: 10px;
+    bottom: 20px;
+}
+
+
+
+/*INFO BEFFORE*/
+
+.info::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f129";
+    margin-right: 10px;
+}
