@@ -10,22 +10,38 @@ var humanDamageMin = 18;
 var humanDamageMax = 27;
 var humanArmor = 9;
 
-function win() {
-    while (orcHitpoints <= 0 || humanHitpoints <= 0){
-        fight();
-    }
-    if (orcHitpoints === 0) {
-        console.log("Orc win!");
-    } else {
-        console.log("Human win!");
-    }
 
+function win() {
+    while (orcHitpoints >= 0 && humanHitpoints > 0) {  
+        fight();
+        console.log(orcHitpoints, humanHitpoints);
+    }
+    
+
+    if (orcHitpoints >= 0) {
+        return console.log("Orc win!");
+     } else if (humanHitpoints >= 0) {
+        return console.log("Human win!");
+     }
 }
 
 function fight() {
-    humanHitpoints = humanHitpoints - orcDamageMax + humanArmor;
-    orcHitpoints = orcHitpoints - humanDamageMax + orcArmor;
+    var orcDamage = funcOrcDamage(); 
+    var humanDamage = funcHumanDamage();
+
+    humanHitpoints = humanHitpoints - orcDamage + humanArmor;
+    orcHitpoints = orcHitpoints - humanDamage + orcArmor;
 }
 
-win();
+function funcOrcDamage() {
+    var orcDamage = (Math.floor(Math.random() * (+orcDamageMax - +orcDamageMin) + +orcDamageMin));
+    return orcDamage;
+}
 
+function funcHumanDamage() {
+    var humanDamage = (Math.floor(Math.random() * (+humanDamageMax - +humanDamageMin) + +humanDamageMin));
+    return humanDamage;
+}
+
+
+win();
