@@ -1,24 +1,26 @@
-var sum = 0;
-
 function sumAllButPrime(x, y) {
+    var sum = 0;
     for (let i = x; i <= y; i++) {
-        if (i === 1) {
+        var number = i;
+        if (number === 1) {
             console.log("Brojot 1 ne e nitu prost, nitu slozen");
 
         } else {
-            function isPrime(number) {
-                var number = i;
-                for (let j = 2; j < number; j++) {
-                    if (number % j === 0) {
-                        var neProst = number;                        
-                    } 
-                    console.log(neProst);
-                }
-                
-                console.log("brojot " + prost + " e prost");
-            }
-            isPrime();
+            if (isPrime(number)) {
+                console.log(number + " e prost");  
+            } else {
+                sum =+ sum +number;  
+            }  
         }
     }
-    console.log("Zbirot na site broevi, koi ne se prosti, od " + x + " do " + y + " e ednakov na " + sum);
+    return "Zbirot na site broevi od " + x + " do " + y + " koi ne se prosti,e ednakov na " + sum;
+}
+
+function isPrime(number) {
+    for (let j = 2; j < number; j++) {
+        if (number % j === 0) {
+            return false;                    
+        } 
+    }
+    return true;
 }
