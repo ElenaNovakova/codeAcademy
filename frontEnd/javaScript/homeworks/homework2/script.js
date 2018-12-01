@@ -9,33 +9,29 @@ function totalyDifferent(N, X) {
         } else {
             closser++;
         }
-  
     }
     return console.log("The closest number bigger than " + N + " that is TOTALY DIFFERENT than number " + X + " is number " + closser); 
 }
 
-totalyDifferent(123, 253);
-
+ totalyDifferent(254, 203);
 
 function check(number1, number2) {
-    var pomos;
-    while (number1) {
-       
+    var helper;
+    while (number1 && number2) {
         var digit1 = number1 % 10;
         number1 = Math.floor(number1 / 10);
-        while (number2) {
-            var digit2 = number2 % 10;
-            number2 = Math.floor(number2 / 10);
-            if (digit1 === digit2) {
-                pomos = false;
-                break;
-            } else {
-                pomos = true;
-            }
-        }
 
-        return pomos;
-        
+        var digit2 = number2 % 10;
+        number2 = Math.floor(number2 / 10);
+   
+        if (digit1 === digit2) {
+            helper = false;
+            break;
+        } else {
+            helper = true;   
+        }  
     }
-
+    return helper; 
 }
+
+
