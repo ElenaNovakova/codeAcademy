@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.body-wrap {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1160px;
+    margin: 10px auto;
+    color: #232323;
+}
+
+.wrap-vaucers {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wrap-vaucers .vaucer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #E9E9E9;
+    margin-bottom: 10px;
+}
+
+.wrap-vaucers .vaucer .price {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.wrap-vaucers .vaucer .price .code{
+    background-color: #f42d04;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.wrap-vaucers .vaucer .price .deal {
+    background-color: #2f4db1;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+.wrap-vaucers .wrap-price {
+    width: calc(100% - 150px);
+    border-left: 1px solid #E9E9E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wrap-vaucers .wrap-price .price-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 20px;
+    
+}
+
+ .small {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/*BUTTON*/
+
+.wrap-vaucers .wrap-price .button {
+    margin: 20px;
+}
+
+
+.wrap-vaucers .wrap-price button {
+    background-color: #299DCC;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 180px;
+    cursor: pointer;
+}
+
+.wrap-vaucers .wrap-price button:hover{
+    background-color: rgb(32, 121, 156);
+}
+
+
+/*SIDEBAR*/
+
+.wrap-sidebar {
+    width: calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.wrap-sidebar .rating {
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    font-size: 18px;
+}
+
+.wrap-sidebar  .service {
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.wrap-sidebar  .service h2 {
+    margin-bottom: 10px;
+}
+
+.wrap-sidebar  .service p {
+    margin-bottom: 10px;
+}
+
+.wrap-sidebar  .service ul {
+    padding-left: 20px;
+}
+
+/*button to top*/
+
+.top{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    border: none;
+}
+
+
+/*rate*/
+
+.ratе {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.ratе i {
+    font-size: 24px;
+    color: #ddd;
+    text-shadow: 0px 0px 10px #f1c40f;
+}
+
+.ratе i:hover {
+    color: #f1c40f;
+}
+
+
+.star-1:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-2:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-3:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-4:hover ~ i {
+    color: #f1c40f;
+}
+
+.star-5:hover ~ i {
+    color: ##f1c40f;
+}

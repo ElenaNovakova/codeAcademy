@@ -1,0 +1,80 @@
+.container {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    border: 2px solid gray;
+    background: #f7f9ff;
+}
+
+p {
+    margin: 0 0 0 10px;
+}
+
+.main p{
+    margin: auto;
+}
+
+.header {
+    height: 15%;
+    background: #52A7F9;
+    display: flex;
+}
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: row;
+    height: 58%;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    height: 43%;
+    margin-top: 10px;
+}
+
+.main-content {
+    background: #6FC041;
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.sidebar {
+    background: #B36AE2;
+    width: 40%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.twin {
+    background: #F3901A;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.twin1 {
+    margin-right: 10px;
+}
+
+.footer {
+    height: 15%;
+    background: #0365C0;
+    display: flex;
+    align-items: center;
+}
