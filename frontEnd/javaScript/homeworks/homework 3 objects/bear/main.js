@@ -1,10 +1,9 @@
 
 function coutDays() {
-    var bear = new Bear();
+    var forest = new Forest();
     for (let i = 1; i <= 30; i++) {
-        bear.liveDays(i);
-
-        if (bear.bearSurviveMass && bear.bearSurviveHunter) {
+        forest.oneDayInTheFores(i);
+        if (forest.bearSurviveMass /*&& bear.bearSurviveHunter*/) {
             continue;
         } else {
             console.log("BEAR DIES ON THE " + i + " DAY");
