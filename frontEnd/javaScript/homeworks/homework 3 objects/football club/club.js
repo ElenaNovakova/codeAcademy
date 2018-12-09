@@ -102,5 +102,5 @@ function Club() {
     this.generatePlayer();
     this.countDays();
     this.calculateBudget();
-    this.allToPrint();
+    
 }
