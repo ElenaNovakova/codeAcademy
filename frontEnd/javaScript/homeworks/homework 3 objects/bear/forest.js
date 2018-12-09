@@ -1,6 +1,8 @@
 function Forest() {
     var bear = new Bear();
     var animal = new Animal();
+    var hunter = new Hunter();
+    this.bearSurviveHunter = true;
 
     this.oneDayInTheFores = function (day) {
         console.log("The " + day + " day begin");
@@ -27,18 +29,30 @@ function Forest() {
         return bear.startMass;
     };
 
+    this.hunterVSBEar = function (day) {
+        if (day > 20) {
+            if (hunter.hunterAttack()) {
+                bear.startMass -= Math.floor(bear.startMass * 0.3);
+                if (bear.startMass > bear.randomAttack) {
+                    console.log("hunter kill bear on the day " + day);
+                    return this.bearSurviveHunter = false;
+                } else {
+                    console.log("Bear runs the hunter ");
+                    return this.bearSurviveHunter = true;
+                }
+            }
+        }
+    }
+    
     this.bearSurviveMass = true;
     this.bearSurvive = function (day) {
-        if (bear.startMass > bear.maxMass)  {
+        if (bear.startMass > bear.maxMass) {
             console.log("$ Bear dies on the because of over weight on the day " + day);
             return this.bearSurviveMass = false;
         } else {
             return this.bearSurviveMass = true;
         }
-        
-
     }
-    
-    
+
 }
 
