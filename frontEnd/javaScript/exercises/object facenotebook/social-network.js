@@ -12,7 +12,6 @@ function SocialNetwork() {
     this.generateEvents = function () {
         for (let i = 0; i < 5; i++) {
             var event = new Event(i);
-            event.userList.push(i)
             this.events.push(event);
         };
     }; 
