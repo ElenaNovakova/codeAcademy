@@ -97,29 +97,30 @@ function PageRenderer(data) {
                 image.style.height = "100%";
 
                 var before = document.createElement("div");
-                before.innerHTML = "<";
-                before.style.height = "50px";
-                before.style.height = "50px";
-                before.style.backgroundColor = "green";
+                var leftArrow = document.createElement("img");
+
+                leftArrow.src = "img/left.jpg";
+                leftArrow.style.height = "50px";
+                leftArrow.style.width = "50px";
                 before.style.alignSelf = "center";
 
                 before.addEventListener("click", function(event){
                     if (event.target.id < 0) {
-                        that.userData.album[event.target.id - 1].link; //???????
+                        that.userData.album[event.target.id - 1].link; 
                         console.log("bla");
                     } else {
-                        that.userData.album[event.target.id--].link;///?????
+                        that.userData.album[event.target.id--].link;
                         console.log("bla");
                     }
-                    
-                    
+                     
                 });
 
                 var after = document.createElement("div");
-                after.innerHTML = ">";
-                after.style.height = "50px";
-                after.style.height = "50px";
-                after.style.backgroundColor = "pink";
+                var rightArrow = document.createElement("img");
+
+                rightArrow.src = "img/right.png"
+                rightArrow.style.height = "50px";
+                rightArrow.style.width = "50px";
                 after.style.alignSelf = "center";
 
                 after.addEventListener("click", function(){
@@ -131,8 +132,10 @@ function PageRenderer(data) {
 
                 rightContainer.appendChild(popupDiv);
                 popupDiv.appendChild(before);
+                before.appendChild(leftArrow);
                 popupDiv.appendChild(image);
                 popupDiv.appendChild(after);
+                after.appendChild(rightArrow)
             });
 
             image.addEventListener("mouseout", function (event) {

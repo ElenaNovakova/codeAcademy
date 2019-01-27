@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+body {
+    background-color: #C7C7A6;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 17px;
+    margin: 0;
+    color: #222;
+}
+
+.artist-container{
+    display: grid;
+    grid-template-areas: "artist similar"
+                         "artist similar"
+                         "artist similar"
+                         "bio    bio"
+                         "bio    bio"
+                         "album  album"
+                         "album  album";
+    width: 70%;
+    background-color: #F4F4EE;
+    margin: 0 auto;
+    padding: 20px;   
+}
+
+.artist-name {
+    grid-area: artist;
+    justify-self: center;
+}
+
+.artist-name h2 {
+    text-align: center;
+}
+
+
+.similar {
+    grid-area: similar;
+    justify-self: center;
+}
+
+.similarArtist {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.similarArtist a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 20px;
+    color: #363020;
+    position: absolute;
+    left: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.similarArtist a:hover{
+    color: #A49966;
+    font-size: 20px;
+}
+
+.similarMainSpan{
+    font-size: 24px;
+}
+
+.artist-bio{
+    grid-area: bio;
+}
+
+.artist-album{
+    grid-area: album;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.albumName {
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+.searchDiv {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
