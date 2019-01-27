@@ -1,0 +1,19 @@
+{
+  "name": "nodeintro",
+  "version": "0.0.1",
+  "description": "Nodejs introduction class",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-refresh main.js"
+  },
+  "author": "Code Academy students",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "express-nunjucks": "^2.2.3",
+    "nodemon": "^1.18.9",
+    "nunjucks": "^3.1.7"
+  }
+}

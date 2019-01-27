@@ -1,0 +1,17 @@
+{
+  "name": "musicapp",
+  "version": "0.0.1",
+  "description": "musicApp",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "elena",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-nunjucks": "^2.2.3",
+    "nodemon": "^1.18.9",
+    "nunjucks": "^3.1.7"
+  }
+}
