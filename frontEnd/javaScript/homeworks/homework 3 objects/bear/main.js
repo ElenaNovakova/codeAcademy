@@ -11,4 +11,4 @@ function coutDays() {
     }    
 }
 
-coutDays();
+document.getElementById('btn').addEventListener('click', coutDays, false);
