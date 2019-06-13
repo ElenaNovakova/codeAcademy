@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "students" : "www.users-facebook.com",
+    "users": "https://jsonplaceholder.typicode.com/users"
+  },
+  "staging": {
+    "users" : "www.users-google.com"
+  },
+  "production": {
+    "users" : "www.users-academy.com"
+  },
+  "urls": {
+    "users": "www.users-academy"
+  }
+}
