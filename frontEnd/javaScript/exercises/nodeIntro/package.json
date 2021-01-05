@@ -10,7 +10,7 @@
   "author": "Code Academy students",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "express": "^4.16.4",
     "express-nunjucks": "^2.2.3",
     "nodemon": "^1.18.9",
